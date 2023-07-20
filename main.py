@@ -1,6 +1,11 @@
 def read_csv(file):
     with open(file, "r") as fileObj:
-        print(fileObj.readlines())
+        return fileObj.readlines()
 
 
-read_csv("./data_source/blackfriday.csv")
+data_blackfriday = read_csv("./data_source/blackfriday.csv")
+
+for item in data_blackfriday:
+    print(item)
+
+
